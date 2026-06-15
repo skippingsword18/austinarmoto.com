@@ -4,96 +4,92 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 ---
 
-<Layout title="Automated Data Processing Platform">
+<Layout title="Automated Data Processing Platform | Austin Armoto">
   <Navbar />
 
-  <main class="max-w-5xl mx-auto px-6 py-20">
+  <main class="max-w-5xl mx-auto px-6 py-24">
+    <a href="/systems" class="text-slate-500 hover:text-white text-sm">
+      ← Back to systems
+    </a>
 
-    <p class="text-blue-400 mb-4">
-      AWS • Jira • Lambda • S3 • CDK
+    <p class="text-sm uppercase tracking-[0.3em] text-blue-400 mt-12 mb-6">
+      Case Study
     </p>
 
-    <h1 class="text-5xl font-bold mb-8">
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-8">
       Automated Data Processing Platform
     </h1>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Problem</h2>
+    <p class="max-w-3xl text-xl text-slate-300 leading-8 mb-16">
+      An event-driven workflow system that reduced operational processing time
+      from multiple days to roughly 30 minutes.
+    </p>
 
-      <p class="text-slate-300">
-        Operational teams were spending multiple days processing
-        perception and transit-phase datasets. The process required
-        significant manual intervention and engineering support,
-        creating delays and reducing team efficiency.
-      </p>
-    </section>
+    <section class="grid md:grid-cols-3 gap-6 mb-20">
+      <div>
+        <p class="text-4xl font-bold text-blue-400">30 min</p>
+        <p class="text-slate-500">Processing time</p>
+      </div>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Solution</h2>
+      <div>
+        <p class="text-4xl font-bold text-blue-400">10+</p>
+        <p class="text-slate-500">Datasets weekly</p>
+      </div>
 
-      <p class="text-slate-300">
-        Designed and implemented an event-driven automation platform
-        integrating Jira workflows, AWS infrastructure, backend
-        processing services, and automated validation systems.
-      </p>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Architecture</h2>
-
-      <div class="rounded-xl border border-slate-800 p-6 bg-slate-900/40 font-mono text-slate-300">
-        Jira Ticket<br/>
-        ↓<br/>
-        Webhook Trigger<br/>
-        ↓<br/>
-        Validation Service<br/>
-        ↓<br/>
-        Lambda Processing<br/>
-        ↓<br/>
-        S3 Storage<br/>
-        ↓<br/>
-        Status Monitoring<br/>
-        ↓<br/>
-        Jira Updates
+      <div>
+        <p class="text-4xl font-bold text-blue-400">7+</p>
+        <p class="text-slate-500">Months in production</p>
       </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Responsibilities</h2>
+    <section class="space-y-16">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Problem</h2>
+        <p class="text-slate-300 leading-8">
+          Operational teams were spending multiple days processing perception
+          and transit-phase datasets. The workflow required manual intervention,
+          engineering support, validation, handoffs, and status tracking across
+          multiple systems.
+        </p>
+      </div>
 
-      <ul class="list-disc pl-6 text-slate-300 space-y-2">
-        <li>Gathered requirements from stakeholders</li>
-        <li>Designed system architecture</li>
-        <li>Implemented backend services</li>
-        <li>Provisioned AWS infrastructure using CDK</li>
-        <li>Configured IAM, VPC, and storage resources</li>
-        <li>Completed security review process</li>
-        <li>Created documentation and operational runbooks</li>
-        <li>Maintained production operations and monitoring</li>
-      </ul>
-    </section>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Solution</h2>
+        <p class="text-slate-300 leading-8">
+          Designed and implemented an event-driven automation platform integrating
+          Jira workflows, AWS Lambda, S3, CDK-managed infrastructure, VPC resources,
+          IAM configuration, CloudWatch monitoring, backend processing services,
+          and automated workflow validation.
+        </p>
+      </div>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Impact</h2>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Workflow</h2>
 
-      <div class="grid md:grid-cols-3 gap-4">
-        <div class="border border-slate-800 rounded-lg p-4">
-          <div class="text-3xl font-bold text-blue-400">30 min</div>
-          <div class="text-slate-400">Processing Time</div>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-4">
-          <div class="text-3xl font-bold text-blue-400">7+</div>
-          <div class="text-slate-400">Months in Production</div>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-4">
-          <div class="text-3xl font-bold text-blue-400">10+</div>
-          <div class="text-slate-400">Datasets Weekly</div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-6 font-mono text-slate-300 overflow-x-auto">
+          Jira Ticket → Webhook → Validation → Processing Worker → S3 → CloudWatch → Jira Status Update
         </div>
       </div>
-    </section>
 
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Ownership</h2>
+
+        <ul class="grid md:grid-cols-2 gap-3 text-slate-300">
+          <li>Requirements gathering</li>
+          <li>Architecture design</li>
+          <li>Python service development</li>
+          <li>AWS CDK infrastructure</li>
+          <li>Lambda deployment</li>
+          <li>VPC and IAM configuration</li>
+          <li>S3 lifecycle configuration</li>
+          <li>Security review</li>
+          <li>CloudWatch monitoring</li>
+          <li>Production maintenance</li>
+          <li>Documentation</li>
+          <li>Operational handoff</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <Footer />
