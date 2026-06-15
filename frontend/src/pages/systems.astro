@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Systems | Austin Armoto">
+  <Navbar />
+
+  <main class="max-w-6xl mx-auto px-6 py-20">
+    <h1 class="text-5xl font-bold mb-6">Systems</h1>
+
+    <p class="max-w-3xl text-slate-300 text-lg mb-12">
+      Selected systems and platforms I have designed, built, maintained, or operated across automation, infrastructure, and hardware-adjacent workflows.
+    </p>
+
+    <section class="space-y-8">
+      <article class="rounded-xl border border-slate-800 bg-slate-900/40 p-8">
+        <p class="text-blue-400 mb-3">AWS • Jira • Lambda • S3 • CDK • CloudWatch</p>
+        <a
+          href="/systems/automated-data-platform"
+          class="text-2xl font-semibold mb-4 block hover:text-blue-400"
+        >
+          Automated Data Processing Platform
+        </a>
+        <p class="text-slate-400 mb-4">
+          Designed and implemented an event-driven workflow automation system that integrates Jira workflows,
+          AWS infrastructure, backend processing services, and operational data handling.
+        </p>
+        <p class="text-slate-400">
+          Reduced processing time from multiple days to roughly 30 minutes while improving visibility,
+          validation, and operational handoff between teams.
+        </p>
+      </article>
+
+      <article class="rounded-xl border border-slate-800 bg-slate-900/40 p-8">
+        <p class="text-blue-400 mb-3">Python • Calibration • Robotics • Testing</p>
+        <h2 class="text-2xl font-semibold mb-4">Calibration & Validation Tooling</h2>
+        <p class="text-slate-400">
+          Built and maintained tooling for camera and magnetometer calibration workflows supporting autonomous systems,
+          including updates for hardware revisions, testing, and regression prevention.
+        </p>
+      </article>
+
+      <article class="rounded-xl border border-slate-800 bg-slate-900/40 p-8">
+        <p class="text-blue-400 mb-3">Salesforce • AWS • Automation • Email Relay</p>
+        <h2 class="text-2xl font-semibold mb-4">Operations Workflow Platform</h2>
+        <p class="text-slate-400">
+          Managed Salesforce objects, flows, account configuration, and AWS-backed encrypted email relay infrastructure
+          supporting operational workflows.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
