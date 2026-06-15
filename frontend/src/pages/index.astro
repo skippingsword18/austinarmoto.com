@@ -2,51 +2,58 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
+import Principles from "../components/Principles.astro";
 import SystemCard from "../components/SystemCard.astro";
 import TechnicalFocus from "../components/TechnicalFocus.astro";
-import Contact from "../components/Contact.astro";
-import Experience from "../components/Experience.astro";
-import Footer from "../components/Footer.astro";
-import ArchitectureFlow from "../components/ArchitectureFlow.astro";
 import Direction from "../components/Direction.astro";
-import Principles from "../components/Principles.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Austin Armoto | System Developer">
   <Navbar />
+
   <main class="min-h-screen">
     <Hero />
-	<ArchitectureFlow />
+
+    <Experience />
+
+    <Principles />
 
     <section id="systems" class="max-w-6xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold mb-8">Featured Systems</h2>
+      <h2 class="text-3xl font-bold mb-8">
+        Selected Systems
+      </h2>
 
       <div class="grid md:grid-cols-3 gap-6">
         <SystemCard
-  		  href="/systems/automated-data-platform"
-  		  tags="AWS • Jira • Lambda • S3 • CDK"
-  		  title="Automated Data Processing Platform"
-  		  description="Designed an event-driven workflow system that reduced operational data processing from multiple days to roughly 30 minutes."
-		/>
+          href="/systems/automated-data-platform"
+          tags="AWS • Jira • Lambda • S3 • CDK"
+          title="Automated Data Processing Platform"
+          description="Designed and implemented an event-driven workflow platform that reduced operational processing time from multiple days to roughly 30 minutes."
+        />
 
         <SystemCard
           tags="Python • Calibration • Robotics"
           title="Calibration & Validation Tooling"
-          description="Built and maintained tooling for camera and magnetometer calibration workflows supporting autonomous vehicle data collection."
+          description="Built and maintained tooling supporting camera and magnetometer calibration workflows for autonomous vehicle data collection."
         />
 
         <SystemCard
           tags="Salesforce • AWS • Automation"
           title="Operations Workflow Platform"
-          description="Managed Salesforce workflows, objects, email relay infrastructure, and automation supporting operational teams."
+          description="Managed Salesforce workflows, custom objects, email relay infrastructure, and operational automation systems."
         />
       </div>
     </section>
-	<Experience />
-  <Principles />
-  <TechnicalFocus />
-  <Direction />
-  <Contact />
+
+    <TechnicalFocus />
+
+    <Direction />
+
+    <Contact />
   </main>
+
   <Footer />
 </Layout>
