@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Resume | Austin Armoto">
+  <Navbar />
+
+  <main class="max-w-5xl mx-auto px-6 py-20">
+    <p class="text-blue-400 font-medium mb-4">Resume</p>
+
+    <h1 class="text-5xl font-bold mb-6">
+      Professional Experience
+    </h1>
+
+    <p class="max-w-3xl text-slate-300 text-lg mb-10">
+      System Developer with experience building automation platforms,
+      operational tooling, cloud infrastructure, and calibration workflows
+      supporting engineering and real-world hardware systems.
+    </p>
+
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Core Focus</h2>
+
+      <div class="grid md:grid-cols-2 gap-4 text-slate-300">
+        <p>Automation Systems</p>
+        <p>Cloud Infrastructure</p>
+        <p>Robotics Operations</p>
+        <p>Data Pipelines</p>
+        <p>Calibration Tooling</p>
+        <p>Workflow Engineering</p>
+      </div>
+    </div>
+
+    <p class="text-slate-400">
+      Downloadable resume coming soon.
+    </p>
+  </main>
+
+  <Footer />
+</Layout>
