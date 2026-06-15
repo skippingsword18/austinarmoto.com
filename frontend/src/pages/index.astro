@@ -21,30 +21,68 @@ import Footer from "../components/Footer.astro";
 
     <Principles />
 
-    <section id="systems" class="max-w-6xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold mb-8">
+    <section id="systems" class="max-w-6xl mx-auto px-6 py-24">
+      <p class="text-sm uppercase tracking-[0.3em] text-blue-400 mb-6">
         Selected Systems
-      </h2>
+      </p>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <SystemCard
+      <div class="space-y-12">
+
+        <a
           href="/systems/automated-data-platform"
-          tags="AWS • Jira • Lambda • S3 • CDK"
-          title="Automated Data Processing Platform"
-          description="Designed and implemented an event-driven workflow platform that reduced operational processing time from multiple days to roughly 30 minutes."
-        />
+          class="block border-b border-slate-800 pb-12 group"
+        >
+          <div class="flex flex-col lg:flex-row lg:justify-between gap-6">
 
-        <SystemCard
-          tags="Python • Calibration • Robotics"
-          title="Calibration & Validation Tooling"
-          description="Built and maintained tooling supporting camera and magnetometer calibration workflows for autonomous vehicle data collection."
-        />
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-blue-400 transition">
+                Automated Data Processing Platform
+              </h2>
 
-        <SystemCard
-          tags="Salesforce • AWS • Automation"
-          title="Operations Workflow Platform"
-          description="Managed Salesforce workflows, custom objects, email relay infrastructure, and operational automation systems."
-        />
+              <p class="max-w-2xl text-slate-300">
+                Designed and implemented an event-driven workflow platform
+                integrating Jira, AWS infrastructure, backend processing,
+                validation, monitoring, and operational automation.
+              </p>
+            </div>
+
+            <div class="text-right">
+              <div class="text-4xl font-bold text-blue-400">
+                30 min
+              </div>
+
+              <div class="text-slate-500">
+                Processing Time
+              </div>
+            </div>
+
+          </div>
+        </a>
+
+        <div class="border-b border-slate-800 pb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Calibration & Validation Tooling
+          </h2>
+
+          <p class="max-w-2xl text-slate-300">
+            Built and maintained tooling supporting camera calibration,
+            magnetometer validation, hardware revisions, testing,
+            and regression prevention for autonomous systems.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Operations Workflow Platform
+          </h2>
+
+          <p class="max-w-2xl text-slate-300">
+            Managed Salesforce workflows, custom objects,
+            email relay infrastructure, and operational automation
+            supporting engineering and operations teams.
+          </p>
+        </div>
+
       </div>
     </section>
 
