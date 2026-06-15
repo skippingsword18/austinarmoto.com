@@ -7,12 +7,15 @@ import TechnicalFocus from "../components/TechnicalFocus.astro";
 import Contact from "../components/Contact.astro";
 import Experience from "../components/Experience.astro";
 import Footer from "../components/Footer.astro";
+import ArchitectureFlow from "../components/ArchitectureFlow.astro";
+import Direction from "../components/Direction.astro";
 ---
 
 <Layout title="Austin Armoto | System Developer">
   <Navbar />
   <main class="min-h-screen">
     <Hero />
+	<ArchitectureFlow />
 
     <section id="systems" class="max-w-6xl mx-auto px-6 py-16">
       <h2 class="text-3xl font-bold mb-8">Featured Systems</h2>
@@ -40,6 +43,7 @@ import Footer from "../components/Footer.astro";
     </section>
 	<Experience />
     <TechnicalFocus />
+    <Direction />
     <Contact />
   </main>
   <Footer />
